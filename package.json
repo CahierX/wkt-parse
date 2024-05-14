@@ -1,0 +1,27 @@
+{
+  "name": "wkt-geo",
+  "version": "0.1.1",
+  "description": "Parse WKT (Well-known text) into geoJSON or stringify geoJSON into WKT",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CahierX/wkt-geo.git"
+  },
+  "keywords": [
+    "WKT",
+    "GeoJSON",
+    "parse",
+    "stringify",
+    "convert",
+    "wellknown"
+  ],
+  "author": "CahierX",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CahierX/wkt-geo/issues"
+  },
+  "homepage": "https://github.com/CahierX/wkt-geo#readme"
+}
