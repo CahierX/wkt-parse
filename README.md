@@ -1,6 +1,6 @@
 # clone by wkt 
 wkt not support Polygon + MultiPoint, so I clone it.
-# wkt-geo
+# wkt-parse
 [![npm version](https://badge.fury.io/js/wkt.svg)](https://badge.fury.io/js/wkt)
 [![Build Status](https://travis-ci.org/benrei/wkt.svg?branch=master)](https://travis-ci.org/benrei/wkt)
 
@@ -11,7 +11,7 @@ into GeoJSON
 
 ## Install
 
-    npm install wkt-geo
+    npm install wkt-parse
 
 ## Usage
 
@@ -19,8 +19,8 @@ into GeoJSON
 Turn [Well-known text](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry) string into GeoJSON
 
 ```js
-const wkt = require('wkt-geo');
-const { parse } = require('wkt-geo');
+const wkt = require('wkt-parse');
+const { parse } = require('wkt-parse');
 
 //  See return values in output section
 wkt.parse('POINT(1 2)');
@@ -39,7 +39,7 @@ parse("POLYGON ((30 10, 40 40, 20 40, 10 20, 30 10))");
 Turn [GeoJSON](https://geojson.org/) `geometry` object or Feature object into WKT (Well-known text)
 
 ```javascript
-const { stringify } = require('wkt');
+const { stringify } = require('wkt-parse');
 
 const geometry = {
   type: "Point",
