@@ -1,4 +1,6 @@
-# wkt
+# clone by wkt 
+wkt not support Polygon + MultiPoint, so I clone it.
+# wkt-geo
 [![npm version](https://badge.fury.io/js/wkt.svg)](https://badge.fury.io/js/wkt)
 [![Build Status](https://travis-ci.org/benrei/wkt.svg?branch=master)](https://travis-ci.org/benrei/wkt)
 
@@ -9,7 +11,7 @@ into GeoJSON
 
 ## Install
 
-    npm install wkt
+    npm install wkt-geo
 
 ## Usage
 
@@ -17,8 +19,8 @@ into GeoJSON
 Turn [Well-known text](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry) string into GeoJSON
 
 ```js
-const wkt = require('wkt');
-const { parse } = require('wkt');
+const wkt = require('wkt-geo');
+const { parse } = require('wkt-geo');
 
 //  See return values in output section
 wkt.parse('POINT(1 2)');
@@ -72,6 +74,7 @@ Throws an error if given a `FeatureCollection` or unknown input.
 * Point + MultiPoint
 * LineString + MultiLineString
 * Polygon + MultiPolygon
+* Polygon + MultiPoint
 * GeometryCollection
 * WKT's containing "Z"
 

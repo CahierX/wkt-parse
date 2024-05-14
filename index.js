@@ -121,11 +121,6 @@ const parse = (wkt)=> {
   function multipoint () {
     if (!$(/^(multipoint(\sz)?)/i)) return null;
     white();
-    // let newCoordsFormat = _
-    //   .substring(_.indexOf('(') + 1, _.length - 1)
-    //   .replace(/\(/g, '')
-    //   .replace(/\)/g, '');
-    // _ = 'MULTIPOINT (' + newCoordsFormat + ')';
     let c = multicoords();
     if (!c) return null;
     white();
